@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Page</title>
+    <link rel="stylesheet" href="crudStyle.css">
+</head>
+<body>
+    <form id="dataForm">
+        <label>ID:</label> <br>
+        <input type="text" id="idField" required>
+        <br> <br>
+        <label>Name:</label> <br>
+        <input type="text" id="nameField">
+        <br> <br>
+        <button type="submit" onclick="insertData()">INSERT</button>
+        <button type="submit" onclick="updateData()">UPDATE</button>
+        <button type="submit" onclick="deleteData()">DELETE</button>
+    </form>
+
+    <div id="dataTable"></div>
+
+    <button id="logoutButton" type="button" onclick="logout()">Logout</button>
+
+    <script src="script.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>
